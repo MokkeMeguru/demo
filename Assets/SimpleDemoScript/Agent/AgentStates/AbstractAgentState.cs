@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-public class AbstractAgentState {
+public abstract class AbstractAgentState {
     private Dictionary<string, AbstracetAgentStateElement> aASEdict 
         = new Dictionary<string, AbstracetAgentStateElement>();
 
