@@ -7,11 +7,18 @@ public class AttrOrderView : MonoBehaviour {
 
     [SerializeField] private AgentAttr agentAttr;
 
+    Animator anim;
+
 	// Use this for initialization
 	void Start () {
         Debug.Log("Initialize Listener");
+        
+        anim = GetComponent<Animator> ();
+        
         agentAttr.AttrEvent.Subscribe(attrOrder =>
         {
+            
+
             Debug.Log("Attribute:" + attrOrder.GetAttr() + "\n"
                 + "Feel:" + attrOrder.GetFeel());
 
@@ -23,12 +30,18 @@ public class AttrOrderView : MonoBehaviour {
             //   // -- some action -- //
             // else if (...)
             //  ...
+            Feel feel = attrOrder.GetFeel();
+            if(feel == Feel.Happy){
+                anim.CrossFade("Happy", 0);
+            }else if(feel == Feel.Awake){
+                anim.CrossFade("Awake", 0);
+            }
         });
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 }
 

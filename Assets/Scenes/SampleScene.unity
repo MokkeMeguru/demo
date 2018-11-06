@@ -2236,6 +2236,10 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 80e42f4bdfa58154c941d6d9ef53ea53, type: 2}
+    - target: {fileID: 1434748641281880, guid: fc938d257a743874d8657d70816e00d9, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc938d257a743874d8657d70816e00d9, type: 2}
   m_IsPrefabAsset: 0
@@ -2300,7 +2304,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1703756140}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 1
   m_Direction: 1
@@ -2320,6 +2324,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1703756154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1703756140}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6beaadc2d2f5b3c46bcc13d06269bcbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentAttr: {fileID: 1703756155}
+--- !u!114 &1703756155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1703756140}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc200eb24b37b72428b6a8907023aae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &2090787859
 Mesh:
   m_ObjectHideFlags: 0
