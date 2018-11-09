@@ -28,11 +28,13 @@ public class AttrOrder
     private readonly Attr attr;
     private readonly Feel feel;
     private readonly bool timer;
+    private readonly float feel_parameter;
     public AttrOrder(Attr attr, Feel feel)
     {
         this.attr = attr;
         this.feel = feel;
         this.timer = false;
+        this.feel_parameter = 0.5;
     }
     public AttrOrder(Attr attr, Feel feel, bool timer)
     {
