@@ -41,6 +41,7 @@ public class AttrOrder
         this.attr = attr;
         this.feel = feel;
         this.timer = timer;
+        this.feel_parameter = 0.5;
     }
 
     public Attr GetAttr()
@@ -50,5 +51,9 @@ public class AttrOrder
     public Feel GetFeel()
     {
         return this.feel;
+    }
+    public Feel GetFeelParameter()
+    {
+        return this.feel_parameter;
     }
 }
